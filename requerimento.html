@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>FatecSJC 1.0</title>
+        <script src="https://www.gstatic.com/firebasejs/3.3.0/firebase.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="js/app.js"></script>
+        <!--    <script type="text/javascript" scr="js/jquery-3.2.1.slim.min.js"></script> -->
+        <script src="js/requerimento.js"></script>
+        
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+    </head>
+
+    <body>
+        
+        <div class = "container">
+            <h1>Fatec São José dos Campos</h1>
+            <div class = "row">
+                <div class="col-sm-3">
+                    <!-- formulário para inclusão/edição -->
+                    <form id="form-requerimento">
+                        
+                        <div class="form-group">
+                            <label for="status">Status do Requerimento</label>
+                            <input type="text" class="form-control" name="status" value="" id="inputstatus">
+                        </div>
+                        <input type="submit" name="" value="Atualizar Status" id="botao-atualizar-requerimento">
+                        <input type="submit" name="" value="Voltar ao Menu" onclick="form.action='menu.html'; form.submit()">
+                    </form>  
+                </div>
+                <div class="col-sm-1">
+                    <!-- para criar espaço -->
+                </div>
+                <div class = "col-sm-8">
+                    <!-- tabela de mensagens -->
+                    <table class="table table-hover">
+                        <diothead>
+                            <tr>
+                                <th colspan="6">Fila de Requerimentos</th>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                            <tr>
+                                <th>Tipo</th>
+                                <th>RA</th>
+                                <th>Identificação</th>
+                                <th>Complemento</th>
+                                <th>Data</th> 
+                                <th>Status</th> 
+                                <th></th> <!-- para um botão -->
+                                <th></th> <!-- para um botão -->
+                            </tr>
+                        </thead>
+                        <tbody id = "tbody-tabela-requerimentos">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div> 
+    </body>
+</html>
