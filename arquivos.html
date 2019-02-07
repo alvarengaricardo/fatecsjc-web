@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Compartilhamento de Arquivos</title>
+        <style media="screen">
+            body{
+                display: flex;
+                min-height: 100vh;
+                width: 100%;
+                padding: 0;
+                margin: 0;
+                align-itens: center;
+                justify-content: center;
+                flex-direction: column;
+            }
+
+            #uploader{
+                -webkit-appearance: none;
+                appearence: none;
+                width: 50%;
+                margin-botton: 10px;
+            }
+        </style>
+    </head>
+<body>
+
+<progress value="0" max="100" id="uploader">0%</progress>
+<input type="file" value="upload" id="fileButton"/>
+
+
